@@ -85,29 +85,80 @@
             <form action="" class="form">
                 <div class="form__box">
                     <p class="form__headline">Заполните заявку и мы забронируем для Вас нового друга</p>
-                    <div class="form__for__who__box">
-                        <button class="form__for__who__box__btn form__for__who__box__btn__selected">хочу ёжика для себя</button>
-                        <button class="form__for__who__box__btn">хочу ёжика для детей</button>
-                        <button class="form__for__who__box__btn">хочу ёжика для разведения</button>
-                    </div>
-                    <div class="form__radio__box">
-                        <input type="radio" name="form__radio__box__el" id="form__radio__box__el__first" class="form__radio__box__el">
-                        <input type="radio" name="form__radio__box__el" id="form__radio__box__el__second" class="form__radio__box__el">
-                    </div>
-                    <div class="form__radio__box">
-                        <input type="radio" name="form__radio__box__el" id="form__radio__box__el__third" class="form__radio__box__el">
-                        <input type="radio" name="form__radio__box__el" id="form__radio__box__el__fourth" class="form__radio__box__el">
+                    <div class="form__box__buttons">
+                        <div class="form__for__who__box">
+                            <button class="form__for__who__box__btn form__for__who__box__btn__selected">хочу ёжика для себя</button>
+                            <button class="form__for__who__box__btn">хочу ёжика для детей</button>
+                            <button class="form__for__who__box__btn">хочу ёжика для разведения</button>
+                        </div>
+                        <div class="form__radio__box">
+                            <div class="form__radio__box__el__box">
+                                <input type="radio" name="form__radio__box__el" id="form__radio__box__el__first" class="form__radio__box__el">
+                                <label for="form__radio__box__el__first" class="form__radio__box__el__label">Мне нужен 1-2 ёжика</label>
+                            </div>
+                            <div class="form__radio__box__el__box">
+                                <input type="radio" name="form__radio__box__el" id="form__radio__box__el__second" class="form__radio__box__el">
+                                <label for="form__radio__box__el__second" class="form__radio__box__el__label">Мне нужны 3-4 ёжика</label>
+                            </div>
+                        </div>
+                        <div class="form__radio__box">
+                            <div class="form__radio__box__el__box">
+                                <input type="radio" name="form__radio__box__el" id="form__radio__box__el__third" class="form__radio__box__el">
+                                <label for="form__radio__box__el__third" class="form__radio__box__el__label">Мне нужны 3 и более ёжиков</label>
+                            </div>
+                            <div class="form__radio__box__el__box">
+                                <input type="radio" name="form__radio__box__el" id="form__radio__box__el__fourth" class="form__radio__box__el">
+                                <label for="form__radio__box__el__fourth" class="form__radio__box__el__label">Пока присматриваюсь</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="form__upper__row">
-                        <input type="text" class="form__name_input" name="form__name_input" id="form__name_input">
-                        <input type="tel" name="form__telephone__input" id="form__telephone__input" class="form__telephone__input">
-                        <input type="email" name="form__email__input" id="form__email__input" class="form__email__input">
+                        <input type="text" class="form__name__input form__input__upper txt__raleway" name="form__name_input" id="form__name_input" placeholder="Ваше имя">
+                        <input type="tel" name="form__telephone__input" id="form__telephone__input" class="form__telephone__input form__input__upper txt__raleway" placeholder="Ваш телефон">
+                        <input type="email" name="form__email__input" id="form__email__input" class="form__email__input form__input__upper txt__raleway" placeholder="Ваш e-mail">
                     </div>
-                    <input type="text" name="form__comment__input" id="form__comment__input" class="form__comment__input">
+                    <input type="text" name="form__comment__input" id="form__comment__input" class="form__comment__input form__input__upper txt__raleway" placeholder="Комментарий к заявке">
                 </div>
-                <input type="button" value="Купить ёжика" class="form__btn__input">
+                <input type="button" value="Купить ёжика" class="form__btn__input txt__raleway">
             </form>
+            <div class="form__promo__box">
+                <img src="./img/form/small_hedgehog.svg" alt="hog" class="form__promo__box__img">
+                <p class="form__promo__box__paragraph">У на осталось еще: <span class="form__promo__box__span">25 ёжиков</span></p>
+            </div>
+            <p class="form__promo__box__description txt__raleway">Торопитесь! Акция действует до 26. 02. 2023</p>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container container__header">
+            <div class="footer__block">
+                <a href="#" class="footer__link"><img src="./img/footer/logo-alt.svg" alt="Лого" class="footer__logo"></a>
+                <div class="footer__content">
+                    <div class="footer__nav">
+                        <a href="#" class="footer__navitem">Каталог</a>
+                        <a href="#" class="footer__navitem">о нас</a>
+                        <a href="#" class="footer__navitem">контакты</a>
+                        <a href="#" class="footer__navitem">галерея</a>
+                    </div>
+                    <!-- /.footer-nav -->
+                    <div class="footer__social">
+                        <a href="#" class="footer__sociallink"><img src="./img/footer/instagram.svg" alt="Инстаграмм" class="footer__socialimg"></a>
+                        <a href="#" class="footer__sociallink"><img src="./img/footer/facebook.svg" alt="Фэйсбук" class="footer__socialimg"></a>
+                        <a href="#" class="footer__sociallink"><img src="./img/footer/twitter.svg" alt="Твиттер" class="footer__socialimg"></a>
+                    </div>
+                    <!-- /.footer-social -->
+                    <a href="#" class="footer__number txt__raleway">+7 (965) 569-89-98</a>
+                </div>
+                <!-- /.footer-content -->
+            </div>
+            <!-- /.footer-block -->
+            <div class="footer__copyright__box">
+                <p class="footer__copyright__box__txt footer__copyright__box__rights txt__raleway">Все права защищены.</p>
+                <p class="footer__copyright__box__txt footer__copyright__box__costs txt__raleway">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            </div>
+
+        </div>
+        <!-- /.container-wide -->
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>
